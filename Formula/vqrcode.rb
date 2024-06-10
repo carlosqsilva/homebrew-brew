@@ -5,7 +5,7 @@ class Vqrcode < Formula
   sha256 "71d0f87974f90ef9cee8d84f2b20d5412cf3a320c188fdbdfa774ebc977293d1"
   license "MIT"
 
-  depends_on "vlang" => ["0.4.3", :build]
+  depends_on "vlang" => ["0.4.6", :build]
 
   def install
     system "v", "-prod", "-w", "-o", "vqrcode", "."
