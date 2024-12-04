@@ -7,9 +7,9 @@ class Vqrcode < Formula
 
   depends_on "vlang" => ["0.4.8", :build]
   depends_on "pkgconf" => :build
-  depends_on "cairo" => :build
-  depends_on "librsvg" => :build
   depends_on "just" => :build
+  depends_on "librsvg"
+  depends_on "cairo"
 
   def install
     system "just", "build"
