@@ -1,14 +1,15 @@
 class Vfetch < Formula
   desc "System fetch tool for macOS written in vlang"
   homepage "https://github.com/carlosqsilva/vfetch"
-  url "https://github.com/carlosqsilva/vfetch/archive/refs/tags/0.3.0.tar.gz"
-  sha256 "ea36a9ca3df4196eea5306165282bdfbad4748197355dc6de4053562b068c697"
+  url "https://github.com/carlosqsilva/vfetch/archive/refs/tags/0.3.1.tar.gz"
+  sha256 "dc1274ff911c0423b72c2ab70dc9a8df909192a15e4363836e470703158c1b1b"
   license "MIT"
 
   depends_on "vlang" => ["0.4.9", :build]
+  depends_on "just" => :build
 
   def install
-    system "v", "-prod", "-w", "-o", "vfetch", "."
+    system "just", "build"
     bin.install "vfetch"
   end
 
