@@ -1,11 +1,11 @@
 class Vqrcode < Formula
   desc "CLI for creating QR codes written in vlang"
   homepage "https://github.com/carlosqsilva/vqrcode"
-  url "https://github.com/carlosqsilva/vqrcode/archive/refs/tags/0.4.0.tar.gz"
-  sha256 "cfc66fc42754f6c18a9ba54a8aba84387bea8058bef59bb4bc132863f4b1fa05"
+  url "https://github.com/carlosqsilva/vqrcode/archive/refs/tags/0.3.2.tar.gz"
+  sha256 "cb430b5a02f094497c1c06658102fac4216a8f3837a6c0dca7b4c712ca8e5824"
   license "MIT"
 
-  depends_on "vlang" => ["0.4.12", :build]
+  depends_on "vlang" => ["0.4.8", :build]
   depends_on "pkgconf" => :build
   depends_on "just" => :build
   depends_on "librsvg"
